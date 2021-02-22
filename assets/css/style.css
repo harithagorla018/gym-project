@@ -1,0 +1,846 @@
+@charset "utf-8";
+
+/**
+ * Name:Circle Sports and Gym Boxing Club
+ * Author: Haritha G
+ * Created: 04-11-2020
+ * Author url:
+ * Version: 1.0
+ * License:
+ * Description: fitness
+ */
+
+
+/* Table of Contents
+   ----------------- */
+
+/**
+  01. Container
+   01.a Logo
+   02.b Navigation
+
+  02. About
+
+  03. Fitness Help
+   03.a Progress Bar
+  
+  04. Fitness Trainers
+
+  05. Gym Timings
+   
+  06. Fecilities
+
+  07. Membership
+
+  08. Free Training
+
+  09. Performance
+
+  10. Contact
+
+  11. Footer
+
+  12. Footer
+
+  
+
+ */
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.cs-logo {
+	position: absolute;
+	top: 0%;
+	left: 0;
+}
+
+.cs-logo  h5 {
+	font-size: 16px;
+	letter-spacing: 4px;
+
+}
+
+.cs-logo  h6 {
+	font-size: 10px;
+	color: white;
+	opacity: 0.8;
+	letter-spacing: 3px;
+}
+
+.cs-navigation {
+	position: absolute;
+	top: 0%;
+	right: 0;
+
+} 
+
+.cs-navigation a,i {
+	color:white;
+	opacity: 0.8;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.cs-navigation a:hover {
+	color: red;
+}
+
+.cs-about-main {
+	position: relative;
+} 
+.cs-about {
+	position: absolute;
+	top: 17%;
+	left: 37%;
+	color: grey;
+	font-size: 13px;
+	/*opacity: 0.6;*/
+}
+
+.cs-help {
+	background-color: #c54a56;
+}
+
+.cs-help-content {
+	color: #D5DBDB ;
+	opacity: 0.7;
+	font-size: 13px;
+}
+
+.cs-help h5 {
+	font-size: 12px;
+	color: white;
+	line-height: 1.5;
+}
+
+.fitness-help {
+  /*background-color: black;*/
+	padding: 0 !important;
+}
+
+.fitness-help-middle {
+  background-color: black;
+}
+
+.fitness-help-middle p {
+  color: grey;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.fitness-help-heading h2 {
+  font-size: 25px;
+  color: white;
+}
+
+.fitness-help-heading h3{
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #c54a56;
+}
+
+.progress {
+  width: 80px;
+  height: 80px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #8a343c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cs-percentage {
+	font-size: 14px;
+}
+
+.cs-help-percentage {
+	font-size: 11px;
+	color: #D5DBDB ;
+	opacity: 0.7;
+}
+
+.progress>span {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  /*border-radius: 100%;*/
+ 
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 4px;
+  border-style: solid;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  color: black;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+
+
+.fitness-trainers-main {
+  position: relative;
+  /*z-index: -1;*/
+}
+
+.fitness-trainers {
+  position: absolute;
+  top: 13%;
+  left: 19%;
+}
+
+.fitness-trainers p {
+  color: grey;
+  font-size: 12px;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.fitness-trainers-form input {
+  display: block;
+  background-color: transparent;
+  border:1px solid transparent;
+  margin: 20px 0px;
+  font-size: 13px;
+}
+
+#ft-form {
+  display: none;
+
+}
+
+.fitness-trainers-form button {
+  display: block;
+  margin-top: 60px;
+  background-color: black;
+  border: 1px solid transparent;
+  font-size: 11px;
+  letter-spacing: 2.2px;
+
+}
+
+.cs-footer-main {
+  position: relative;
+}
+
+.cs-footer {
+  position: absolute;
+  left: 46%;
+  top: 20%;
+}
+
+.cs-footer p {
+  font-size: 12px;
+}
+
+.cs-footer-socials i {
+  color: #4a4444;
+  /*opacity: 0.9;*/
+}
+
+.cs-contact {
+  background-color: #c54a56;
+  padding: 203.5px 40px;
+
+}
+
+.cs-contact span,p {
+  font-size: 12px;
+  color: #b3a3a3;
+
+}
+
+.cs-contact-sub-main {
+  background-color: black;
+  padding: 175px 80px;
+  padding-top: 195px;
+} 
+
+.cs-contact-sub p {
+  color: grey;
+}
+
+.hello {
+  width: 400px;
+  height: 80px;
+  padding: 20px;
+  border:1px solid red;
+   transform: rotate(-2deg);
+}
+
+.cs-trainers {
+  background-color: black;
+  padding: 40px;
+}
+
+.cs-trainers h5 {
+  color:#c54a56;
+  letter-spacing: 2px;
+}
+
+.cs-timings {
+  position: relative;
+  overflow: hidden;
+}
+
+.triangle-1 {
+  position: absolute;
+  top: 47%;
+  left: 43%;
+}
+
+
+.triagle-2 {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  /*border: 2px solid red;*/
+  opacity: 0.7;
+  transform: rotate(45deg);
+}
+
+.triagle-2::after {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  content: '';
+  background-color:#e43b4c;
+  width: 440px;
+  height: 440px;
+  border: 15px solid #312c2c;
+  /*opacity:0.2;*/
+}
+
+.cs-timings-fitness {
+  position: absolute;
+  top: 72%;
+  left: 44%;
+
+}
+
+.cs-timings-fitness h4 {
+  color: black;
+}
+
+.cs-timings-fitness p{
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+
+.carousel-indicators {
+  /*padding-top: 20px;*/
+  bottom: -49px;
+  width: 70px;
+  left: 23px;
+
+}
+
+.carousel-indicators li {
+   background-color: black;
+}
+ 
+.cs-fecilities-main {
+  position: relative;
+}   
+
+.cs-fecilities {
+  position: absolute;
+  top: 22%;
+  left: 28%;
+}
+
+.cs-fecilities-fitnes {
+  position: relative;
+  width: 50%;
+}
+
+.cs-fecilities-fitnes {
+  position: absolute;
+  top:75%;
+  left: 37%; 
+
+}
+
+.cs-membership-main {
+  position: relative;
+}
+
+.hello-hi-welcome {
+  position: absolute;
+  border:1px solid white;
+  /*left: 2%;*/
+  top: 24%;
+  transform: skewY(-4deg);
+
+}
+
+.hello-hi-welcome h1 {
+  font-size: 47px;
+  color: #f13d4f;
+  background-color: white;
+  /*font-weight: bold;*/
+}
+
+.hello-welcome {
+  position: absolute;
+  bottom: 63%;
+  left: 27%;
+  transform: rotate(-6deg);
+  padding: 10px 0px;
+  /*border:1px solid red;*/
+  color: white;
+  background-color: #0e0e0e;
+  /*opacity: 0.8;*/
+}
+
+.welcome {
+  position: absolute;
+  bottom: 50.5%;
+  left: 40%;
+  background-color:#e43b4c; 
+}
+
+.hello {
+  width: 25%;
+   position: absolute;
+  bottom: 45%;
+  left: 37%;
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  border: none;
+  transform: rotate(-6deg);
+  /*background-color:#e43b4c; */
+}
+
+.cs-membership {
+  position: absolute;
+  top: 12%;
+  left: 48%;
+}
+
+.cs-standard {
+  width: 21%;
+  position: relative;
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  background-color: #171719;
+  /*border:1px solid #272729;*/
+} 
+
+.cs-standard-two {
+  bottom: 5%;
+  left: 40%;
+}
+
+.cs-standard-three {
+  bottom: 5%;
+  left: 65%;
+}
+
+.cs-standard h5 {
+  color: #c54a56;
+  /*padding: 100px;*/
+
+  /*font-weight: bold;*/
+}
+
+#cs-standard {
+  padding-bottom: 100px;
+}
+.hello-hi {
+  position: absolute;
+  left: 0;
+  top: 23%;
+}
+
+.cs-standard p{
+  line-height: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.cs-standard button {
+  border:1px solid black;
+  background-color: black;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hello-hi {
+  border:1px solid #c54a56;
+  width: 283px;
+  padding: 5px 0px;
+  /*transform: rotate(-7deg);*/
+  transform: skewY(-4deg);
+
+  background-color: #c54a56;
+}
+
+.cs-free-training-main {
+  position: relative;
+}
+
+.cs-free-training {
+  position: absolute;
+  left:32%;
+  top: 30%;
+  text-align: center; 
+} 
+
+.cs-free-training p {
+  color: #c54a56;
+}
+
+
+.cs-fees-main {
+  background-color: black;
+  /*padding: 100px 40px;*/
+}
+
+.cs-fees {
+padding: 20px 80px;
+padding-top: 130px;  
+
+}
+
+.cs-fees p {
+color:#6b6868;
+
+}
+
+.cs-training-form {
+background-color:#131212;
+padding: 10px 50px;
+padding-bottom: 50px;
+
+}
+
+.cs-training-form input {
+  border-bottom: 1px solid #495057;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+
+.cs-boxing {
+  background-color: #9c303a;
+}
+
+.cs-boxing h6 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.cs-offers {
+  padding: 28px 0px;
+  background-color: #131212;
+}
+
+.cs-performance {
+  position: relative;
+}
+
+.cs-news-main {
+  width: 65%;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+
+}
+
+.cs-news p{
+  color: #212529;
+
+}
+
+.cs-news h6{
+  color: #565454;
+  font-weight: bold;
+
+}
+
+.cs-news del {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.hello-world {
+  position: absolute;
+  /*top: 15%;*/
+  left: 39%;
+  bottom: 77%;
+  background-color: #e43b4c;
+
+}
+
+.world {
+  bottom: 78%;
+  left: 32%;
+}
+
+.welcome-world {
+  width: 51%;
+    position: absolute;
+    bottom: 83%;
+    left: 0%;
+/*margin-bottom: 40px;*/
+}
+
+.hi {
+  z-index: 1;
+  width: 27%;
+  position: absolute;
+  bottom: 94%;
+  left: 36%;
+}
+
+.hii {
+  bottom: 124%;
+    left: 38%;
+    padding: 8px 34px;
+}
+
+
+.welcome-hi {
+  width: 27%;
+  bottom: 66%;
+    left: 35%;
+}
+
+.cs-about-content {
+  padding-top: 230px;
+}
+
+
+.helloo {
+  width: 100%;
+  left: -36px;
+    bottom: 39%;
+
+}
+
+.helllo {
+  bottom: 53%;
+    width: 130%;
+    left: -30px;
+}
+
+
+.cs-heading {
+  border:1px solid red;
+  background-color: #e43b4c;
+  width: 50%;
+  text-align: center;
+  
+}
+
+.outer {
+  position: absolute;
+  left: 52%;
+  top: 10%;
+  transform: rotate(-75deg);
+  width: 750px;
+  
+}
+
+.outer-boxing-main {
+  position: absolute;
+  left: 46%;
+  bottom: 20%;
+  transform: rotate(-75deg);
+  width: 380px;
+}
+
+.outer-boxing {
+  position: relative;
+  background-color: #171719;
+  opacity: 0.9;
+  color: white;
+}
+
+
+.outer-boxing::before {
+   position: absolute;
+  content: '';
+  top: 0;
+  left: 379px;
+  border-style: solid;
+  border-color: transparent transparent #171719 #171719;
+  border-width: 72px 19px;
+}
+
+.outer-boxing::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -37px;
+  border-style: solid;
+  border-color: #171719 #171719 transparent transparent;
+  border-width: 72px 19px;
+}
+
+.inner {
+  position: relative;
+  background-color:  #e43b4c;
+}
+
+.inner::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 399px;
+  border-style: solid;
+  border-color: transparent transparent #e43b4c #e43b4c;
+  border-width: 81px 20px;
+}
+
+.inner-1::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -37px;
+  border-style: solid;
+  border-color: #e43b4c #e43b4c transparent transparent;
+  border-width: 82px 19px;
+}
+
+.inner p {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.cs-logo-main {
+  position: relative;
+}
+
+.cs-container {
+  /*position: relative;*/
+  background-color: black;
+}
+
+.cs-common-shapes {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border:1px solid #e43b4c;
+  background-color: #e43b4c;
+}
+
+.cs-common-shapes-two::before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 82px;
+  border-style: solid;
+  border-color: transparent transparent #e43b4c #e43b4c;
+  border-width: 20px 13px;
+}
+
+.cs-common-shapes-two::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -20px; 
+  border-style: solid;
+  border-color:  #e43b4c #e43b4c transparent transparent;
+  border-width: 21px 11px;
+}
+
+.common-outer {
+  position: absolute;
+  left: 12%;
+  top: 4%;
+  transform: rotate(-75deg);
+  width: 84px;
+  height: 40px;
+  
+}
+
+.cs-common-shapes-main {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border:1px solid #e43b4c;
+  background-color: #e43b4c;
+}
+
+.cs-common-shapes-one::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -20px; 
+  border-style: solid;
+  border-color: black black transparent transparent;
+  border-width: 21px 10px;
+}
+
+.common-outer-main {
+  position: absolute;
+  left: 13%;
+  top: 4%;
+  transform: rotate(-75deg);
+  width: 184px;
+  height: 41px;
+  
+}
+
+.shapes {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 180px;
+  background-color: black;
+  border: 1px solid black;
+  /*margin-right: 10px;*/
+}
